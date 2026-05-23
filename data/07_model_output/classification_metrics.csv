@@ -1,0 +1,4 @@
+modelo,accuracy,precision,recall,f1_score,cv_accuracy_mean,cv_accuracy_std
+Logistic Regression,0.7832,0.673,0.5713,0.618,0.7798,0.0206
+Decision Tree,0.7687,0.6284,0.6035,0.6157,0.7425,0.0161
+Random Forest,0.782,0.6784,0.5514,0.6083,0.7687,0.0138

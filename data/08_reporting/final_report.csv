@@ -1,0 +1,8 @@
+seccion,metrica,valor
+CLASIFICACIÓN,Mejor Modelo,Logistic Regression
+CLASIFICACIÓN,Accuracy,0.7832
+CLASIFICACIÓN,F1 Score,0.618
+CLASIFICACIÓN,Precision,0.673
+CLASIFICACIÓN,Recall,0.5713
+CLUSTERING,N Clusters,3
+CLUSTERING,Silhouette Score,0.131
