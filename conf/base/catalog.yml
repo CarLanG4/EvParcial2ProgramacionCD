@@ -1,0 +1,51 @@
+# ============================================================
+# DATA CATALOG — face_attributes
+# ============================================================
+# Cada entrada define un dataset: qué archivo es, dónde está,
+# y cómo Kedro lo carga/guarda automáticamente.
+
+# ── CAPA 1: RAW (datos originales sin tocar) ──
+raw_attributes:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/Attributes.csv
+
+# ── CAPA 2: INTERMEDIATE (datos limpios) ──
+clean_attributes:
+  type: pandas.CSVDataset
+  filepath: data/02_intermediate/clean_attributes.csv
+
+# ── CAPA 3: PRIMARY (datos con features nuevas) ──
+features_attributes:
+  type: pandas.CSVDataset
+  filepath: data/03_primary/features_attributes.csv
+
+# ── CAPA 4: FEATURE (X_train, X_test, y_train, y_test) ──
+X_train:
+  type: pandas.CSVDataset
+  filepath: data/04_feature/X_train.csv
+
+X_test:
+  type: pandas.CSVDataset
+  filepath: data/04_feature/X_test.csv
+
+y_train:
+  type: pandas.CSVDataset
+  filepath: data/04_feature/y_train.csv
+
+y_test:
+  type: pandas.CSVDataset
+  filepath: data/04_feature/y_test.csv
+
+# ── CAPA 7: MODEL OUTPUT (predicciones y modelos) ──
+classification_metrics:
+  type: pandas.CSVDataset
+  filepath: data/07_model_output/classification_metrics.csv
+
+clustering_results:
+  type: pandas.CSVDataset
+  filepath: data/07_model_output/clustering_results.csv
+
+# ── CAPA 8: REPORTING (reportes finales) ──
+final_report:
+  type: pandas.CSVDataset
+  filepath: data/08_reporting/final_report.csv

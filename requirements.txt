@@ -1,0 +1,26 @@
+# ============================================================
+# REQUIREMENTS — face_attributes (Kedro Project)
+# ============================================================
+# Instalar todo con: pip install -r requirements.txt
+
+# ── Kedro framework ──
+kedro==0.19.6
+kedro-datasets[pandas]>=1.0.0
+
+# ── Data manipulation ──
+pandas>=1.5.0
+numpy>=1.23.0
+
+# ── Machine Learning ──
+scikit-learn>=1.2.0
+
+# ── Visualization ──
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# ── Utilities ──
+joblib>=1.2.0
+
+# ── Jupyter (opcional, para notebooks) ──
+notebook>=6.5.0
+ipykernel>=6.0.0

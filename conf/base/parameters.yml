@@ -1,0 +1,23 @@
+# ============================================================
+# PARÁMETROS GLOBALES — face_attributes
+# ============================================================
+# Todos los hiperparámetros del proyecto en un solo lugar.
+# Para cambiar algo, solo se edita este archivo.
+
+# ── Pipeline 1: Data Processing ──
+target_column: "attractive"        # Variable objetivo para clasificación
+test_size: 0.2                     # 20% para test
+random_state: 42                   # Semilla reproducibilidad
+
+# ── Pipeline 2: Feature Engineering ──
+correlation_threshold: 0.05        # Features con correlación mínima con target
+features_to_drop:
+  - image_id                       # No es feature útil (es un ID de imagen)
+
+# ── Pipeline 3: Classification ──
+n_estimators: 100                  # Árboles en Random Forest
+max_depth: 10                      # Profundidad máxima del árbol
+cv_folds: 5                        # Folds para validación cruzada
+
+# ── Pipeline 4: Clustering ──
+n_clusters: 3                      # Número de grupos (perfiles de cara)
